@@ -66,9 +66,9 @@ venv\Scripts\activate
 
 No installation is needed because the project has no external dependencies. If you later add packages, list them in a `requirements.txt` and install with:
 
-bash
+```bash
 pip install -r requirements.txt
-
+```
 
 ### Step 4: Configuration
 
@@ -78,23 +78,23 @@ No configuration is required. The script reads the DNA sequence interactively fr
 
 Run the script from the project folder:
 
-bash
+```bash
 python dna_analyzer.py
 # or:
 python3 dna_analyzer.py
-
+```
 
 You will be prompted for input:
 
-
+```
 Enter DNA sequence:
-
+```
 
 Type or paste a DNA sequence (for example `ATGGCCATTGTAATGGGCCGCTGAAAGGGTGCCCGATAG`) and press Enter.
 
 ### Example
 
-
+```
 Enter DNA sequence:ATGGCC
 --- DNA Sequence Analyzer ---
 DNA Sequence: ATGGCC
@@ -107,14 +107,15 @@ GC Content: 66.67 %
 AT Content: 33.33 %
 Complement: TACCGG
 Reverse: CCGGTA
-
+```
 
 ### Invalid input
 
 If the sequence contains characters other than A, T, G, C (spaces, numbers, or lowercase letters are converted to uppercase first, so `atgc` is accepted), the program prints:
 
-
+```
 Invalid DNA sequence!
+```
 
 and exits without further output.
 
